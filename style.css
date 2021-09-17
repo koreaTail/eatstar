@@ -1,0 +1,186 @@
+body{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 56px;
+}
+.navbar{
+  display: flex;
+  align-items:flex-end;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  position: sticky;
+  width: 100%;
+  top:0px;
+}
+
+.navbar__title{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar__title i{
+  margin-left: 20px;
+}
+
+.navbar__number{
+  margin: 0;
+  margin-left: 20px;
+  
+}
+
+.navbar__sentence{
+  display: flex;
+  justify-content: left;
+  font-size: 13px;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.foodBox{
+  padding: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foodPictue{
+  height: 250px;
+  width: 100%;
+  border: 1px solid white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.김치찌개{
+ background-image: url(./img/김치찌개.jpg);
+}
+
+.된장찌개{
+ background-image: url(./img/된장찌개.jpg);
+}
+
+.소고기스테이크{
+  background-image: url(./img/소고기스테이크.jpeg);
+ }
+
+ .삼계탕{
+  background-image: url(./img/삼계탕.jpg);
+ }
+
+ .가츠동{
+  background-image: url(./img/가츠동.jfif);
+ }
+
+ .갈비탕{
+  background-image: url(./img/갈비탕.jpg);
+ }
+
+ .고기짬뽕{
+  background-image: url(./img/고기짬뽕.jpg);
+ }
+
+ .김밥{
+  background-image: url(./img/김밥.jpg);
+ }
+
+ .라면{
+  background-image: url(./img/라면.jpg);
+ }
+
+ .마파두부덮밥{
+  background-image: url(./img/마파두부덮밥.jpg);
+ }
+
+ .만두국{
+  background-image: url(./img/만두국.jfif);
+ }
+
+ .맑은짬뽕{
+  background-image: url(./img/맑은짬뽕.jpg);
+ }
+
+ .미역국{
+  background-image: url(./img/미역국.jpg);
+ }
+
+ .부대찌개{
+  background-image: url(./img/부대찌개.jpg);
+ }
+
+ .사골곰탕{
+  background-image: url(./img/사골곰탕.jfif);
+ }
+
+ .삼겹살{
+  background-image: url(./img/삼겹살.jpg);
+ }
+
+ .삼계탕{
+  background-image: url(./img/삼계탕.jpg);
+ }
+
+ .소불고기{
+  background-image: url(./img/소불고기.png);
+ }
+
+ .순대국밥{
+  background-image: url(./img/순대국밥.jpg);
+ }
+
+ .쌈밥{
+  background-image: url(./img/쌈밥.jfif);
+ }
+
+ .짬뽕{
+  background-image: url(./img/짬뽕.jpg);
+ }
+
+ .치킨{
+  background-image: url(./img/치킨.jpg);
+ }
+
+ .칼국수{
+  background-image: url(./img/칼국수.jpg);
+ }
+
+ .탕수육{
+  background-image: url(./img/탕수육.jfif);
+ }
+
+ .피자{
+  background-image: url(./img/피자.jpg);
+ }
+
+ .한솥치킨마요{
+  background-image: url(./img/한솥치킨마요.jpg);
+ }
+
+ .호박죽{
+  background-image: url(./img/호박죽.jfif);
+ }
+
+.foodScore{
+  font-size: 40px;
+}
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid rgba(128, 128, 128, 0.35);
+}
+
+.bottom__icon{
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
