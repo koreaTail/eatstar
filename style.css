@@ -70,7 +70,7 @@ body{
 }
 
 .star-rating input {
-  /* display:none; */
+  display:none;
 }
 
 .star-rating label {
