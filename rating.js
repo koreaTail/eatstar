@@ -1,9 +1,10 @@
 const score = document.querySelector('.score');
+const foods = document.querySelector('.food');
 const stars = document.querySelector('.stars');
 const reset = document.querySelector('.reset');
 const grade_btn = document.querySelector('.grade_btn');
-
-const MAX = 5; 
+const star = stars.querySelector('img');
+console.log(star)
 
 let state = {
     score: 0
@@ -11,14 +12,15 @@ let state = {
 
 let score_list = [];
 
+const MAX = 5; 
 //원소의 개수가 5개인 빈 배열을 생성한다 
-let stararray = Array(MAX).fill();
+// let stararray = Array(MAX).fill();
 //각각의 원소에 접근해서 element요소를 만들어 star div에 하나씩 추가한다
-stararray.forEach(() => {
-    const star = document.createElement('div');
-    star.className = 'star empty';
-    stars.appendChild(star);
-});
+// stararray.forEach(() => {
+//     const star = document.createElement('div');
+//     star.className = 'star empty';
+//     stars.appendChild(star);
+// });
 
 // 일단 이 부분으르 자바스크립트로 구현하지 말고 html로 구현한다. 그리고 이벤트 함수를 이용해 적용한다.
 
@@ -67,15 +69,15 @@ function saveScore() {
 }
 
 //별들을 클릭했을 때에 별들의 색깔이 채워지도록 한다 
-stars.addEventListener("click",(e) => {
+foods.addEventListener("click",(e) => {
     fillStar(calculateScore(e));
 });
 //별들 위에서 손가락을 움직이면 별이 채워질 수 있도록 한다 
-stars.addEventListener("mousemove", (e) => {
+foods.addEventListener("mousemove", (e) => {
     fillStar(calculateScore(e));
 });
 //mouse를 떠났을 경우
-stars.addEventListener("mouseleave", (e) => {
+foods.addEventListener("mouseleave", (e) => {
     fillStar(state.score);
     score.textContent = state.score;
 });

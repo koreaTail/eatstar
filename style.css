@@ -2,14 +2,21 @@ body{
   margin: 0;
   padding: 0;
   padding-bottom: 56px;
+  /* width: 400px; */
+}
+
+.all_round{
+  display: flex;
+  justify-content: center;
 }
 
 .navbar{
   display: flex;
+  justify-content: center;
   align-items:flex-end;
   background-color: white;
   border-bottom: 1px solid gray;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top:0px;
 }
@@ -41,6 +48,11 @@ body{
   padding-top: 10px;
 }
 
+.food{
+  padding-top: 71px;
+  padding-bottom: 64px;
+}
+
 .foodBox{
   padding: 20px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.35);
@@ -48,6 +60,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .foodPictue{
@@ -92,6 +105,7 @@ body{
   position: fixed;
   bottom: 0;
   width: 100%;
+  max-width: 600px;
   background-color: white;
   border-top: 1px solid rgba(128, 128, 128, 0.35);
 }
@@ -124,7 +138,7 @@ html,body, .container{
 }
 
 .stars{
-  position: absolute;
+  /* position: absolute; */
   top: 150px;
   display: inline-block;
   left: 0;
