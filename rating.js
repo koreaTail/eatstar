@@ -1,9 +1,8 @@
 const score = document.querySelector('.score');
-const stars = document.querySelector('.stars');
+const foods = document.querySelector('.food');
 const reset = document.querySelector('.reset');
 const grade_btn = document.querySelector('.grade_btn');
 
-const MAX = 5; 
 
 let state = {
     score: 0
@@ -11,14 +10,15 @@ let state = {
 
 let score_list = [];
 
+const MAX = 5; 
 //원소의 개수가 5개인 빈 배열을 생성한다 
-let stararray = Array(MAX).fill();
+// let stararray = Array(MAX).fill();
 //각각의 원소에 접근해서 element요소를 만들어 star div에 하나씩 추가한다
-stararray.forEach(() => {
-    const star = document.createElement('div');
-    star.className = 'star empty';
-    stars.appendChild(star);
-});
+// stararray.forEach(() => {
+//     const star = document.createElement('div');
+//     star.className = 'star empty';
+//     stars.appendChild(star);
+// });
 
 // 일단 이 부분으르 자바스크립트로 구현하지 말고 html로 구현한다. 그리고 이벤트 함수를 이용해 적용한다.
 
@@ -29,17 +29,17 @@ function calculateScore(e){
     const {width, left} = e.currentTarget.getBoundingClientRect();
     //왼쪽 끝 부터 마우스로 누른 곳 까지의 길이
     const x = e.clientX - left;
-    console.dir(x)
+    // console.dir(x)
     //별 반개
     const half_score = width / MAX / 2;
-    console.dir(half_score)
+    // console.dir(half_score)
     //마우스를 누른 위치까지의 별 개수 return
-    console.dir(Math.floor(x / half_score + 1) /2)
+    // console.dir(Math.floor(x / half_score + 1) /2)
     return Math.floor(x / half_score + 1) /2;
     
 }
 //별을 채우는 함수 
-function fillStar(star_index){
+function fillStar(star_index,e, stars, star){
     const starList = [...stars.children];
     starList.forEach((star,index) => {
         //user가 누른 별의 인덱스가 starList의 인덱스보다 크면 
@@ -67,18 +67,24 @@ function saveScore() {
 }
 
 //별들을 클릭했을 때에 별들의 색깔이 채워지도록 한다 
-stars.addEventListener("click",(e) => {
-    fillStar(calculateScore(e));
+foods.addEventListener("click",(e) => {
+    const 음식이름 = e.target.parentElement.parentElement.parentElement.children[0].classList[1];
+    if(음식이름 !== undefined){
+        const stars = document.querySelector(`.${음식이름}`).parentElement.children[2].children[1]
+        const star = stars.querySelector('img');
+        fillStar(calculateScore(e),e, stars, star);
+    };
 });
+
 //별들 위에서 손가락을 움직이면 별이 채워질 수 있도록 한다 
-stars.addEventListener("mousemove", (e) => {
-    fillStar(calculateScore(e));
-});
+// foods.addEventListener("mousemove", (e) => {
+//     fillStar(calculateScore(e),e);
+// });
 //mouse를 떠났을 경우
-stars.addEventListener("mouseleave", (e) => {
-    fillStar(state.score);
-    score.textContent = state.score;
-});
+// foods.addEventListener("mouseleave", (e) => {
+//     fillStar(state.score);
+//     score.textContent = state.score;
+// });
 //reset 'x'버튼을 클릭하면 0으로 초기화 된다 
 reset.addEventListener('click', () => {
     fillStar(0);
