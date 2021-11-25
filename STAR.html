@@ -21,7 +21,19 @@
         <p class="navbar__sentence"> 흥미롭네요. 조금씩 당신을 알아갑니다.</p>
       </div>
     </nav>
+    
     <section class="food">
+      <form>
+        <div>
+          <input type="file" id="directory_upload" webkitdirectory>
+        </div>
+        <div class="file_list">
+          <p></p>
+        </div>
+      </form>
+        
+        <!-- 출처: https://hianna.tistory.com/347 [어제 오늘 내일] -->
+
       <div class="foodBox">
         <div class="foodPictue 김치찌개"></div>
         <div class="foodName">
@@ -36,13 +48,8 @@
             <div class="star empty"></div>
             <div class="star empty"></div>
           </div>
-          <div class="btns">
-              <button class="reset">X</button>
-              <button type="submit" class="grade_btn">O</button>
-          </div>  
         </div>
       </div>
-  
       <div class="foodBox">
         <div class="foodPictue 된장찌개"></div>
         <div class="foodName">
@@ -57,25 +64,9 @@
             <div class="star empty"></div>
             <div class="star empty"></div>
           </div>
-          <div class="btns">
-              <button class="reset">X</button>
-              <button type="submit" class="grade_btn">O</button>
-          </div>  
-        </div>
-        <div class="star-rating">
-          <input type="radio" id="5-stars" name="rating" value="5" />
-          <label for="5-stars" class="star">&#9733;</label>
-          <input type="radio" id="4-stars" name="rating" value="4" />
-          <label for="4-stars" class="star">&#9733;</label>
-          <input type="radio" id="3-stars" name="rating" value="3" />
-          <label for="3-stars" class="star">&#9733;</label>
-          <input type="radio" id="2-stars" name="rating" value="2" />
-          <label for="2-stars" class="star">&#9733;</label>
-          <input type="radio" id="1-star" name="rating" value="1" />
-          <label for="1-star" class="star">&#9733;</label>
         </div>
       </div>
-  
+      
     </section>
     <section class="bottom">
       <div class="bottom__icon">
@@ -86,6 +77,7 @@
     </section>
   </div>
   <script src="rating.js"></script>
+  <script src="addPicture.js"></script>
 
 </body>
 

@@ -77,6 +77,7 @@ foods.addEventListener("click",(e) => {
     };
 });
 
+//별들 위에서 손가락을 움직이면 별이 채워질 수 있도록 한다 
 foods.addEventListener("mousemove",(e) => {
     const 음식이름 = e.target.parentElement.parentElement.parentElement.children[0].classList[1];
     if(음식이름 !== undefined){
@@ -86,6 +87,7 @@ foods.addEventListener("mousemove",(e) => {
     };
 });
 
+//mouse를 떠났을 경우
 foods.addEventListener("mouseleave",(e) => {
     const 음식이름 = e.target.parentElement.parentElement.parentElement.children[0].classList[1];
     if(음식이름 !== undefined){
@@ -95,20 +97,12 @@ foods.addEventListener("mouseleave",(e) => {
         score.textContent = state.score;
     };
 });
-//별들 위에서 손가락을 움직이면 별이 채워질 수 있도록 한다 
-// foods.addEventListener("mousemove", (e) => {
-//     fillStar(calculateScore(e),e);
-// });
-//mouse를 떠났을 경우
-// foods.addEventListener("mouseleave", (e) => {
-//     fillStar(state.score);
-//     score.textContent = state.score;
-// });
+
 //reset 'x'버튼을 클릭하면 0으로 초기화 된다 
-reset.addEventListener('click', () => {
-    fillStar(0);
-    state.score = 0;
-    score.innerText = 0;
-});
+// reset.addEventListener('click', () => {
+//     fillStar(0);
+//     state.score = 0;
+//     score.innerText = 0;
+// });
 //0를 클릭하면 별 점수가 리스트에 저장이 된다 
-grade_btn.addEventListener('click', saveScore);
+// grade_btn.addEventListener('click', saveScore);
