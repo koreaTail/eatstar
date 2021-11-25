@@ -39,7 +39,7 @@ function calculateScore(e){
     
 }
 //별을 채우는 함수 
-function fillStar(star_index,e, stars, star){
+function fillStar(star_index,e, stars){
     const starList = [...stars.children];
     starList.forEach((star,index) => {
         //user가 누른 별의 인덱스가 starList의 인덱스보다 크면 
@@ -55,6 +55,7 @@ function fillStar(star_index,e, stars, star){
             star.className = 'star empty';
         }
     });
+
     //현재의 별 점수 상태를 별 개수의 점수로 저장한다
     state.score = star_index;
     //점수를 표기해주기 위해서 score에 저장한다
@@ -76,6 +77,24 @@ foods.addEventListener("click",(e) => {
     };
 });
 
+foods.addEventListener("mousemove",(e) => {
+    const 음식이름 = e.target.parentElement.parentElement.parentElement.children[0].classList[1];
+    if(음식이름 !== undefined){
+        const stars = document.querySelector(`.${음식이름}`).parentElement.children[2].children[1]
+        const star = stars.querySelector('img');
+        fillStar(calculateScore(e),e, stars, star);
+    };
+});
+
+foods.addEventListener("mouseleave",(e) => {
+    const 음식이름 = e.target.parentElement.parentElement.parentElement.children[0].classList[1];
+    if(음식이름 !== undefined){
+        const stars = document.querySelector(`.${음식이름}`).parentElement.children[2].children[1]
+        const star = stars.querySelector('img');
+        fillStar(calculateScore(e),e, stars, star);
+        score.textContent = state.score;
+    };
+});
 //별들 위에서 손가락을 움직이면 별이 채워질 수 있도록 한다 
 // foods.addEventListener("mousemove", (e) => {
 //     fillStar(calculateScore(e),e);
