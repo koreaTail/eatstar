@@ -12,7 +12,14 @@ preview.appendChild(list);
 for(const file of selectedFiles) {
 const listItem = document.createElement('li');
 const summary = document.createElement('div');
-console.log(file.name.substring(0,file.name.indexOf(".jpg")))
+
+if(file.name.includes(jpg)){
+    console.log(file.name.substring(0,file.name.indexOf(".jpg")))    
+}if(file.name.includes(jfif)){
+    console.log(file.name.substring(0,file.name.indexOf(".jfif")))
+} else{
+    console.log(file.name)
+}
 summary.textContent = file.name;
 listItem.appendChild(summary);
 list.appendChild(listItem);
