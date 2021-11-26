@@ -72,12 +72,7 @@ foods.addEventListener("click",(e) => {
 
 
     const 음식이름 = e.target.parentElement.parentElement.parentElement.children[0].classList[1];
-    const 음식이름정돈 = 음식이름.substring(0,음식이름.indexOf(".jpg"))
-    // jpg 걸러내기
-    console.log(음식이름.substring(0,음식이름.indexOf(".jpg")))
-    //jfif 걸러내기 
-    console.log(음식이름.substring(0,음식이름.indexOf(".jfif")))
-    if(음식이름정돈 !== undefined){
+    if(음식이름 !== undefined){
         const stars = document.querySelector(`.${음식이름}`).parentElement.children[2].children[1]
         const star = stars.querySelector('img');
         fillStar(calculateScore(e),e, stars, star);

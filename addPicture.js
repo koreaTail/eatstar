@@ -13,14 +13,18 @@ for(const file of selectedFiles) {
 const listItem = document.createElement('li');
 const summary = document.createElement('div');
 
-if(file.name.includes(jpg)){
-    console.log(file.name.substring(0,file.name.indexOf(".jpg")))    
-}if(file.name.includes(jfif)){
-    console.log(file.name.substring(0,file.name.indexOf(".jfif")))
-} else{
-    console.log(file.name)
+if(file.name.includes("jpg")){
+    summary.textContent = file.name.substring(0,file.name.indexOf(".jpg"))   
+}else if(file.name.includes("jfif")){
+    summary.textContent = file.name.substring(0,file.name.indexOf(".jfif"))
+}else if(file.name.includes("jpeg")){
+    summary.textContent = file.name.substring(0,file.name.indexOf(".jpeg"))
+}else if(file.name.includes("png")){
+    summary.textContent = file.name.substring(0,file.name.indexOf(".png"))
+}else{
+    summary.textContent = file.name
 }
-summary.textContent = file.name;
+// summary.textContent = file.name;
 listItem.appendChild(summary);
 list.appendChild(listItem);
 // 출처: https://hianna.tistory.com/347 [어제 오늘 내일]
