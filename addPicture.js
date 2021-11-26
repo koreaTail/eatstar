@@ -37,12 +37,15 @@ foodPicture.classList.add('foodPicture')
 foodPicture.classList.add(summary.textContent)
 const foodName = document.createElement('div')
 foodName.classList.add('foodName')
+
 const h2 = document.createElement('h2')
 h2.innerText = summary.textContent
 foodName.appendChild(h2)
 foodBox.appendChild(foodPicture)
 foodBox.appendChild(foodName)
 food.appendChild(foodBox)
+
+// foodPicture.style.backgroundImage = "url('./img/${file.name}')";
 
 const container = document.createElement('div')
 container.classList.add('container')
@@ -87,3 +90,7 @@ foodBox.appendChild(container)
 //     background-image: url(./img/된장찌개.jpg);
 //     /* display: none; */
 //    }
+
+// function 음식이미지추가(){
+//     foodPicture.style.backgroundImage = `url(./img/${file.name})`;
+// }
