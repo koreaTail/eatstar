@@ -12,6 +12,7 @@ preview.appendChild(list);
 for(const file of selectedFiles) {
 const listItem = document.createElement('li');
 const summary = document.createElement('div');
+console.log(file.name.substring(0,file.name.indexOf(".jpg")))
 summary.textContent = file.name;
 listItem.appendChild(summary);
 list.appendChild(listItem);
@@ -32,7 +33,38 @@ foodBox.appendChild(foodPicture)
 foodBox.appendChild(foodName)
 food.appendChild(foodBox)
 
-console.log(document.querySelector('.김치찌개.jpg'))
+const container = document.createElement('div')
+container.classList.add('container')
+const score = document.createElement('span')
+score.classList.add('score')
+const stars = document.createElement('div')
+stars.classList.add('stars')
+let star = document.createElement('div')
+star.classList.add('star')
+star.classList.add('empty')
+stars.appendChild(star)
+star = document.createElement('div')
+star.classList.add('star')
+star.classList.add('empty')
+stars.appendChild(star)
+star = document.createElement('div')
+star.classList.add('star')
+star.classList.add('empty')
+stars.appendChild(star)
+star = document.createElement('div')
+star.classList.add('star')
+star.classList.add('empty')
+stars.appendChild(star)
+star = document.createElement('div')
+star.classList.add('star')
+star.classList.add('empty')
+stars.appendChild(star)
+
+
+
+container.appendChild(score)
+container.appendChild(stars)
+foodBox.appendChild(container)
 }
 }
 
