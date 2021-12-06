@@ -4,8 +4,7 @@
   "description": "내가 좋아하는 음식 리스트를 완성하자. 뭐먹을지 고민될 때마다 열어보자!",
   "main": "addPicture.js",
   "scripts": {
-    "win": "index.js",
-    "안되나": "jsjs.js"
+    "win": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/koreaTail/eatstar/issues"
   },
-  "homepage": "https://github.com/koreaTail/eatstar#readme"
+  "homepage": "https://github.com/koreaTail/eatstar#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
