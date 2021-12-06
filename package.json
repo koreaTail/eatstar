@@ -4,8 +4,8 @@
   "description": "내가 좋아하는 음식 리스트를 완성하자. 뭐먹을지 고민될 때마다 열어보자!",
   "main": "addPicture.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "win": "index.js"
+    "win": "index.js",
+    "안되나": "jsjs.js"
   },
   "repository": {
     "type": "git",
