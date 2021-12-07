@@ -4,7 +4,7 @@
   "description": "내가 좋아하는 음식 리스트를 완성하자. 뭐먹을지 고민될 때마다 열어보자!",
   "main": "addPicture.js",
   "scripts": {
-    "win": "node index.js"
+    "dev": "nodemon --exec npx babel-node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,12 @@
   "homepage": "https://github.com/koreaTail/eatstar#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "nodemon": "^2.0.15"
   }
 }

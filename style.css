@@ -159,17 +159,17 @@ html,body, .container{
 }
 
 .star.empty{
-  background: url("./빈별.png") no-repeat;
+  background: url("./star-img/빈별.png") no-repeat;
   background-size: cover;
 }
 
 .star.half{
-  background: url("./반별.png") no-repeat;
+  background: url("./star-img/반별.png") no-repeat;
   background-size: cover;
 }
 
 .star.full{
-  background: url("./꽉별.png") no-repeat;
+  background: url("./star-img/꽉별.png") no-repeat;
   background-size: cover;
 }
 .btns {
