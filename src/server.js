@@ -10,11 +10,15 @@ const app = express();
 
 // 햄버거처럼.. 서버의 내용물을 채운다.
 const handleHome = (req, res) => {
-    console.log(req);
+    return res.end();
+}
+
+const handleLogin = (req,res) => {
+    return res.send("Login here")
 }
 
 app.get("/", handleHome)
-
+app.get("/login", handleLogin);
 
 
 // 서버를 듣고
