@@ -13,61 +13,517 @@
 
 <body>
   <div class="all_round">
-    <nav class="navbar">
+    <div class="top__title">
+      <h3>음식 평가하기</h3>
+    </div>
+    <!-- <nav class="navbar">
       <div class="navbar__title">
-        <!-- <i class="fas fa-utensils"></i> -->
         <p class="navbar__number">14</p>
-        <!-- 평가한 음식 수 -->
         <p class="navbar__sentence"> 흥미롭네요. 조금씩 당신을 알아갑니다.</p>
       </div>
-    </nav>
+    </nav> -->
+    
+    
+    <!-- 출처: https://hianna.tistory.com/347 [어제 오늘 내일] -->
+    
     
     <section class="food">
-      <form>
-        <div>
-          <input type="file" id="directory_upload" webkitdirectory>
-        </div>
-        <div class="file_list">
-          <p></p>
-        </div>
-      </form>
-        
-        <!-- 출처: https://hianna.tistory.com/347 [어제 오늘 내일] -->
-
       <div class="foodBox">
         <div class="foodPicture 김치찌개"></div>
-        <div class="foodName">
-          <h2>김치찌개</h2>
-        </div>
-        <div class="container">
-          <span class="score"></span>
-          <div class="stars">
-            <div class="star empty"></div>
-            <div class="star empty"></div>
-            <div class="star empty"></div>
-            <div class="star empty"></div>
-            <div class="star empty"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>김치찌개</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="foodBox">
         <div class="foodPicture 된장찌개"></div>
-        <div class="foodName">
-          <h2>된장찌개</h2>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>된장찌개</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
         </div>
-        <div class="container">
-          <span class="score"></span>
-          <div class="stars">
-            <div class="star empty"></div>
-            <div class="star empty"></div>
-            <div class="star empty"></div>
-            <div class="star empty"></div>
-            <div class="star empty"></div>
+      </div>
+
+      <div class="foodBox">
+        <div class="foodPicture 소고기스테이크"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>소고기스테이크</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
           </div>
         </div>
       </div>
       
-    </section>
+      <div class="foodBox">
+        <div class="foodPicture 삼계탕"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>삼계탕</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 가츠동"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>가츠동</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 갈비탕"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>갈비탕</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 고기짬뽕"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>고기짬뽕</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 김밥"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>김밥</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 라면"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>라면</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 마파두부덮밥"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>마파두부덮밥</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="foodBox">
+        <div class="foodPicture 짬뽕"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>짬뽕</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 쌈밥"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>쌈밥</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 순대국밥"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>순대국밥</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 소불고기"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>소불고기</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 삼겹살"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>삼겹살</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 사골곰탕"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>사골곰탕</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 부대찌개"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>부대찌개</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 미역국"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>미역국</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 맑은짬뽕"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>맑은짬뽕</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 만두국"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>만두국</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 치킨"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>치킨</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 칼국수"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>칼국수</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 탕수육"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>탕수육</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 피자"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>피자</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 한솥치킨마요"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>한솥치킨마요</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="foodBox">
+        <div class="foodPicture 호박죽"></div>
+        <div class="scoreAndName">
+          <div class="foodScore">
+            <div class="bad">
+              <i class="fa fa-thumbs-o-down"></i>
+            </div>
+          </div>
+          <div class="foodName">
+            <span>호박죽</span>
+          </div>
+          <div class="foodScore">
+            <div class="good">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
     <section class="bottom">
       <div class="bottom__icon">
         <a href="./index.html"><i class="fas fa-home"></i></a>
@@ -78,7 +534,7 @@
   </div>
   <script src="rating.js"></script>
   <script src="addPicture.js"></script>
-
+  
 </body>
 
 </html>

@@ -5,10 +5,12 @@ body{
   /* width: 400px; */
 }
 
-.all_round{
+
+
+/* .all_round{
   display: flex;
   justify-content: center;
-}
+} */
 
 .navbar{
   display: flex;
@@ -30,6 +32,25 @@ body{
   padding-bottom: 20px;
 }
 
+.top__title{
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: large;
+  border-bottom: 1px solid gray;
+}
+
+.top__title h3{
+  margin: 5px;
+}
+
 .navbar__title i{
   margin-left: 20px;
 }
@@ -49,8 +70,15 @@ body{
 }
 
 .food{
-  padding-top: 71px;
+  padding-top: 41px;
   padding-bottom: 64px;
+}
+
+.food.main{
+  padding-top: 11px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .foodBox{
@@ -59,17 +87,81 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
+}
+
+.food.main .foodBox{
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  flex: auto;
+  margin: 0;
 }
 
 .foodPicture{
-  height: 250px;
+  position: relative;
   width: 100%;
+  height: 250px;
   border: 1px solid white;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 10px;
 }
+
+.food.main .foodPicture{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+
+.scoreAndName{
+  display: flex;
+  justify-content:space-around;
+  
+}
+
+.foodScore{
+  width: 60px;
+  height: 60px;
+  /* border: 1px solid #111; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.food.main .foodScore{
+  display: none;
+}
+
+
+.foodScore .good{
+  /* margin-top: 5px; */
+}
+
+.foodScore .bad{
+  margin-top: 8px;
+}
+
+.foodScore i{
+  font-size: 20px;
+}
+
+.foodName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 194px;
+  font-size: 25px;
+}
+
+.food.main .foodName{
+  font-size: 10px;
+}
+
+
 
 
 .star-rating {
@@ -194,4 +286,16 @@ html,body, .container{
   width: 30px;
   height: 30px;
   border: none;
+}
+
+/* 오늘뭐먹지화면 */
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
+}
+
+.filter__i {
+  padding-right: 4px;
 }
