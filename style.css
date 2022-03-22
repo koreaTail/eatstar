@@ -2,14 +2,23 @@ body{
   margin: 0;
   padding: 0;
   padding-bottom: 56px;
+  /* width: 400px; */
 }
+
+
+
+/* .all_round{
+  display: flex;
+  justify-content: center;
+} */
 
 .navbar{
   display: flex;
+  justify-content: center;
   align-items:flex-end;
   background-color: white;
   border-bottom: 1px solid gray;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top:0px;
 }
@@ -21,6 +30,25 @@ body{
   height: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.top__title{
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: large;
+  border-bottom: 1px solid gray;
+}
+
+.top__title h3{
+  margin: 5px;
 }
 
 .navbar__title i{
@@ -41,22 +69,99 @@ body{
   padding-top: 10px;
 }
 
+.food{
+  padding-top: 41px;
+  padding-bottom: 64px;
+}
+
+.food.main{
+  padding-top: 11px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .foodBox{
   padding: 20px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.35);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
-.foodPictue{
-  height: 250px;
+.food.main .foodBox{
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  flex: auto;
+  margin: 0;
+}
+
+.foodPicture{
+  position: relative;
   width: 100%;
+  height: 250px;
   border: 1px solid white;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 10px;
 }
+
+.food.main .foodPicture{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+
+.scoreAndName{
+  display: flex;
+  justify-content:space-around;
+  
+}
+
+.foodScore{
+  width: 60px;
+  height: 60px;
+  /* border: 1px solid #111; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.food.main .foodScore{
+  display: none;
+}
+
+
+.foodScore .good{
+  /* margin-top: 5px; */
+}
+
+.foodScore .bad{
+  margin-top: 8px;
+}
+
+.foodScore i{
+  font-size: 20px;
+}
+
+.foodName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 194px;
+  font-size: 25px;
+}
+
+.food.main .foodName{
+  font-size: 10px;
+}
+
+
 
 
 .star-rating {
@@ -92,6 +197,7 @@ body{
   position: fixed;
   bottom: 0;
   width: 100%;
+  max-width: 600px;
   background-color: white;
   border-top: 1px solid rgba(128, 128, 128, 0.35);
 }
@@ -102,4 +208,94 @@ body{
   font-size: 25px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+
+
+/* 네이버 블로그 별점입력 css */
+html,body, .container{
+  margin: 0;
+  height: 100%;
+}
+.container {
+  display: grid;
+}
+
+.score{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top:100px;
+  font-size: 20px;
+}
+
+.stars{
+  /* position: absolute; */
+  top: 150px;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 52px;
+  cursor: pointer;
+  width:fit-content;
+  border: 3px solid #111;
+  border-radius: 10px;
+}
+
+.stars .star{
+  width: 48px;
+  height: 48px;
+  padding: 2px;
+  display: inline-block;
+}
+
+.star.empty{
+  background: url("./star-img/빈별.png") no-repeat;
+  background-size: cover;
+}
+
+.star.half{
+  background: url("./star-img/반별.png") no-repeat;
+  background-size: cover;
+}
+
+.star.full{
+  background: url("./star-img/꽉별.png") no-repeat;
+  background-size: cover;
+}
+.btns {
+  top: 210px;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  margin: auto;
+  border: none;
+}
+.reset{
+  display: inline-block;
+  margin:auto;
+  width: 30px;
+  height: 30px;
+  border:none;
+}
+
+.grade_btn{
+  display: inline-block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+/* 오늘뭐먹지화면 */
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
+}
+
+.filter__i {
+  padding-right: 4px;
 }

@@ -1,14 +1,17 @@
 
 .김치찌개{
   background-image: url(./img/김치찌개.jpg);
+  /* display: none; */
  }
  
  .된장찌개 .foodPictue{
   background-image: url(./img/된장찌개.jpg);
+  /* display: none; */
  }
  
  .소고기스테이크{
    background-image: url(./img/소고기스테이크.jpeg);
+   /* display: none; */
   }
  
   .삼계탕{
@@ -61,10 +64,6 @@
  
   .삼겹살{
    background-image: url(./img/삼겹살.jpg);
-  }
- 
-  .삼계탕{
-   background-image: url(./img/삼계탕.jpg);
   }
  
   .소불고기{
