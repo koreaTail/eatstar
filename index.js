@@ -1,19 +1,14 @@
-const BODY = document.querySelector("body");
-const 된장찌개 = document.querySelector(".된장찌개")
+const BODY = document.querySelector("body")
+const foods = document.querySelector(".food")
 
-const 된장찌개별 = 된장찌개.querySelector(".star-rating")
+foods.addEventListener("click", 클릭시함수)
 
-console.dir(된장찌개별)
+function 클릭시함수(e){
 
-function 알람주기(event) {
-  console.dir(event.target)
-  if (event.target) {
-    // event.target.style.color = "red";
-    event.target.style.color = "blue";
-  } else {
-    event.target.style.color = "red";
+  console.log(e.target.children[0].classList.value == 'good')
+  if(e.target.classList.value == 'foodScore'){
+    e.target.children[0].children[0].style.fontSize ="40px"
   }
 }
 
-된장찌개별.addEventListener("click", 알람주기);
 

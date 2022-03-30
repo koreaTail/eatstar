@@ -4,104 +4,164 @@
   /* display: none; */
  }
  
- .된장찌개{
+.된장찌개{
   background-image: url(./img/된장찌개.jpg);
   /* display: none; */
  }
  
- .소고기스테이크{
+.소고기스테이크{
    background-image: url(./img/소고기스테이크.jpeg);
    /* display: none; */
   }
  
-  .삼계탕{
+.삼계탕{
    background-image: url(./img/삼계탕.jpg);
   }
  
-  .가츠동{
+.가츠동{
    background-image: url(./img/가츠동.jfif);
   }
  
-  .갈비탕{
+.갈비탕{
    background-image: url(./img/갈비탕.jpg);
   }
  
-  .고기짬뽕{
+.고기짬뽕{
    background-image: url(./img/고기짬뽕.jpg);
   }
  
-  .김밥{
+.김밥{
    background-image: url(./img/김밥.jpg);
   }
  
-  .라면{
+.라면{
    background-image: url(./img/라면.jpg);
   }
  
-  .마파두부덮밥{
+.마파두부덮밥{
    background-image: url(./img/마파두부덮밥.jpg);
   }
  
-  .만두국{
+.만두국{
    background-image: url(./img/만두국.jfif);
   }
  
-  .맑은짬뽕{
+.맑은짬뽕{
    background-image: url(./img/맑은짬뽕.jpg);
   }
  
-  .미역국{
+.미역국{
    background-image: url(./img/미역국.jpg);
   }
  
-  .부대찌개{
+.부대찌개{
    background-image: url(./img/부대찌개.jpg);
   }
  
-  .사골곰탕{
+.사골곰탕{
    background-image: url(./img/사골곰탕.jfif);
   }
  
-  .삼겹살{
+.삼겹살{
    background-image: url(./img/삼겹살.jpg);
   }
  
-  .소불고기{
+.소불고기{
    background-image: url(./img/소불고기.png);
   }
  
-  .순대국밥{
+.순대국밥{
    background-image: url(./img/순대국밥.jpg);
   }
  
-  .쌈밥{
+.쌈밥{
    background-image: url(./img/쌈밥.jfif);
   }
  
-  .짬뽕{
+.짬뽕{
    background-image: url(./img/짬뽕.jpg);
   }
  
-  .치킨{
+.치킨{
    background-image: url(./img/치킨.jpg);
   }
  
-  .칼국수{
+.칼국수{
    background-image: url(./img/칼국수.jpg);
   }
  
-  .탕수육{
+.탕수육{
    background-image: url(./img/탕수육.jfif);
   }
  
-  .피자{
+.피자{
    background-image: url(./img/피자.jpg);
   }
  
-  .한솥치킨마요{
+.한솥치킨마요{
    background-image: url(./img/한솥치킨마요.jpg);
   }
  
-  .호박죽{
+.호박죽{
    background-image: url(./img/호박죽.jfif);
   }
+
+.우동{
+    background-image: url(./img/우동.png);
+  }
+
+.제육볶음{
+    background-image: url(./img/제육볶음.png);
+  }
+
+.쭈꾸미{
+    background-image: url(./img/쭈꾸미.png);
+  }
+
+.치킨마요{
+    background-image: url(./img/치킨마요.png);
+  }
+
+.콩나물국밥{
+    background-image: url(./img/콩나물국밥.jpg);
+  }
+
+.한솥도시락{
+    background-image: url(./img/한솥도시락.jpg);
+  }
+
+.햄버거{
+    background-image: url(./img/햄버거.jpg);
+  }
+
+.야채죽{
+    background-image: url(./img/야채죽.jpg);
+  }
+
+.스팸볶음밥{
+    background-image: url(./img/스팸볶음밥.jpg);
+  }
+
+.서브웨이{
+    background-image: url(./img/서브웨이.png);
+}
+
+.김치가츠나베{
+  background-image: url(./img/김치가츠나베.png);
+}
+
+.모닝빵{
+  background-image: url(./img/모닝빵.png);
+}
+
+.물냉면{
+  background-image: url(./img/물냉면.png);
+}
+
+.베트남쌀국수{
+  background-image: url(./img/베트남쌀국수.jpg);
+}
+
+.막국수{
+  background-image: url(./img/막국수.png);
+}

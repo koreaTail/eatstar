@@ -4,6 +4,7 @@ const reset = document.querySelector('.reset');
 const grade_btn = document.querySelector('.grade_btn');
 
 
+
 let state = {
     score: 0
 }
@@ -108,3 +109,5 @@ foods.addEventListener("mouseleave",(e) => {
 // });
 //0를 클릭하면 별 점수가 리스트에 저장이 된다 
 // grade_btn.addEventListener('click', saveScore);
+
+

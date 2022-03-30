@@ -139,10 +139,12 @@ body{
 
 .foodScore .good{
   /* margin-top: 5px; */
+  pointer-events: none;
 }
 
 .foodScore .bad{
   margin-top: 8px;
+  pointer-events: none;
 }
 
 .foodScore i{
